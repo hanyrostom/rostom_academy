@@ -94,11 +94,10 @@ header a:hover{
 }
 .intro .image_box {
   padding: 3.2rem 2.4rem;
-  border: 1px solid red;
-
+  width: 60%
 }
 .intro .image_box img {
-  max-width: 60%;
+  max-width: 100%;
 }
 .intro .start {
   display: flex;
@@ -110,14 +109,48 @@ header a:hover{
 
 .features {
   display: flex;
+  padding-left: 2.4rem;
+}
+.features #left_image_box {
+  padding-right: 2.4rem;
+  width: 60%;
+}
+.features #left_image_box img {
+  max-width: 100%;
+  margin-top: 3.2rem;
+}
+
+/*FIX THIS SELECTOR BELOW!!!!!!!!!!!*/
+.left .text:nth-child(1n+1){
+  background-color: lightgrey;
+}
+.features .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 3.2rem;
   margin-bottom: 3.2rem;
 }
-.features .image_box {
-  padding: 3.2rem 2.4rem;
-  border: 1px solid black;
+.right .side_container {
+  display: flex;
 }
-.features .image_box img {
-  max-width: 60%;
+#right_image_box {
+  width: 35%;
+}
+.right .side_container .text {
+  width: 65%;
+  position: relative;
+  left:1rem;
+}
+.right .side_container .text p {
+  padding-top: .8rem
+}
+.right .side_container .text .tiny {
+  color: hsla(214,70%,60%,1)
+}
+.side_container img {
+  max-width: 100%;
 }
 
 /*majors*/
@@ -163,7 +196,7 @@ header a:hover{
   max-width: 30%;
   background-color: white;
 }
-/* animation */
+/* animation for majors*/
 .option:hover {
 
 }
@@ -173,4 +206,44 @@ header a:hover{
 .all_options_container .text h4 {
   padding-top: .8rem;
   padding-bottom: .8rem;
+}
+
+/*Thesis*/
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 96rem;
+  border: 1px solid red;
+  position: relative;
+  z-index: 999;
+  margin: 0 auto;
+  top: 6.4rem;
+  overflow: hidden;
+}
+.thesis h2 {
+  margin: 3.2rem 0 3.2rem 0;
+}
+.all_exhibits {
+  display: flex;
+}
+
+.left_side {
+  margin: 0 2.4rem 3.2rem 2.4rem;
+  border: 1px solid orange;
+  width: 60%;
+  overflow: hidden;
+}
+.left_side video{
+ max-width: 100%
+}
+.left_side .text {
+  margin-left: 2.4rem;
+}
+/*footer*/
+footer {
+  position: relative;
+  top: 6.4rem;
 }
