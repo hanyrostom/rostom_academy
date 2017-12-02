@@ -15,23 +15,37 @@ a{
 }
 p{
   font-size: 1.6rem;
+  color: hsla(202,0%,60%,1);
+}
+h4 {
+    font-size: 1.8rem;
+    color: hsla(202,0%,60%,1);
 }
 h3{
   font-size: 2.1rem;
+
 }
 h2{
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 h1{
   font-size: 3.2rem;
+  font-weight: bold;
 }
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
   height: 6.4rem;
+  width: 100%;
   align-items: center;
+  position: fixed;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  z-index: 9999999;
+  background-color: hsla(201,0%,100%,0.95)
+
+
 }
 header .right ,header .left{
   display: flex;
@@ -52,6 +66,10 @@ header .right{
 header .right p {
   margin-left: 1.6rem;
 }
+/*animation*/
+header a:hover{
+
+}
 /*main page width*/
 .main{
   width: 96rem;
@@ -59,13 +77,15 @@ header .right p {
   flex-direction: column;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+  top: 6.4rem;
 }
 /* Intro */
 .intro {
   display: flex;
 
 
-  background-color: hsla(202,0%,85%,1);
+  background-color: hsla(202,0%,89%,1);
 }
 .intro div {
 
@@ -105,33 +125,52 @@ header .right p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: hsla(202,0%,85%,1);
+  background-color: hsla(202,0%,95%,1);
+}
+.majors h2 {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.all_options_container{
+  margin: 0rem 7.2rem 0 7.2rem;
+  max-width: 96rem;
 }
 .all_options {
   display: flex;
   flex-direction: column;
-  margin: 3.2rem 7.2rem;
-  border: 2px solid orange;
   max-width: 96rem;
 }
-.all_options img {
+.all_options_container img {
   width: 100%;
   height: auto;
 }
-.all_options .text {
-  padding: 1.6rem 1.6rem 2.4rem 1.6rem;
-
+.all_options_container .text {
+  padding-top: 1.6rem;
+  padding-left:1.6rem;
+  padding-bottom: 2.4rem;
 }
 .options1 {
   display: flex;
   justify-content: center;
+  margin-bottom: 3.2rem;
 }
 .options2 {
   display: flex;
   justify-content: center;
+  margin-bottom: 3.2rem;
 }
 .option {
-  margin: 3.2rem;
-  border: 2px solid black;
+  max-width: 30%;
   background-color: white;
+}
+/* animation */
+.option:hover {
+
+}
+.middle {
+  margin:0rem 3.2rem;
+}
+.all_options_container .text h4 {
+  padding-top: .8rem;
+  padding-bottom: .8rem;
 }
