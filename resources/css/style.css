@@ -40,7 +40,10 @@ h1{
   line-height: 3.6rem;
 }
 /* Header */
-header {
+#header_mobile{
+  display: none;
+}
+#header_desktop{
   display: flex;
   justify-content: space-between;
   height: 6.4rem;
@@ -51,7 +54,7 @@ header {
   z-index: 9999999;
   background-color: hsla(201,0%,100%,0.95)
 }
-header .right ,header .left{
+#header_desktop .right ,header .left{
   display: flex;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
@@ -65,10 +68,10 @@ header .right ,header .left{
 #academy{
   color: hsla(202,0%,70%,1);
 }
-header .right{
+#header_desktop .right{
   justify-content: space-between;
 }
-header .right p {
+#header_desktop .right p {
   display: flex;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
@@ -79,7 +82,7 @@ header .right p {
 }
 /*animation*/
 
-header .right p:hover {
+#header_desktop .right p:hover {
   color: white;
   background-color: hsla(202,0%,30%,1);
   height: 6.4rem;
@@ -87,6 +90,44 @@ header .right p:hover {
   font-weight: bold;
   font-size: 1.8rem;
 }
+@media only screen and (max-width : 600px) {
+
+ #header_desktop{
+  display: none;
+}
+#header_mobile{
+  display: flex;
+  padding: auto 0;
+}
+ #header_mobile div{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   height: 6.4rem;
+   width: 100%;
+   position: fixed;
+   box-shadow: 0 0 1px .5px rgba(0, 0, 0, 0.3);
+   z-index: 9999999;
+   background-color: hsla(201,0%,100%,0.95)
+ }
+  #header_mobile a:hover {
+ background-color: hsla(201,0%,71%,0.95);
+ width: 125%;
+ height:100%;
+  }
+ #header_mobile a {
+   margin:auto 0;
+   display: flex;
+   width: 100%;
+   height: 75%;
+ }
+ #header_mobile img {
+   width: 100%;
+   height:auto;
+ }
+
+ }
+
 
 /*main page width*/
 .main{
@@ -293,7 +334,7 @@ background-color: hsla(202,0%,89%,1);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 96rem;
+  width: 96rem;
   position: relative;
   z-index: 999;
   margin: 0 auto;
@@ -309,7 +350,7 @@ background-color: hsla(202,0%,89%,1);
 
 .left_side {
   margin: 0 2.4rem 3.2rem 2.4rem;
-  width: 60%;
+  max-width: 60%;
   overflow: hidden;
 }
 .left_side video{
@@ -324,7 +365,7 @@ background-color: hsla(202,0%,89%,1);
 .right_side {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  max-width: 40%;
 }
 .right_side .side_container{
   display: flex;
