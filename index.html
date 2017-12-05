@@ -56,7 +56,7 @@ divided into 2 sides side to side -->
 <!-- "Features" 2nd section in page divided into
  2 sides side to side-->
       <div class="container features">
-        <div id="left_box">
+        <div id="left_box" class="hidden">
 
           <div id="left_image_box">
             <img src="./resources/media/information-main.jpg" alt="Keep practicing kinda guy" />
@@ -76,7 +76,8 @@ divided into 2 sides side to side -->
           <div class="side_container">
 
             <div id="right_image_box">
-              <img src="./resources/media/information-orientation.jpg" alt="Students orientation"/>
+              <img class="desktop_image" src="./resources/media/information-orientation.jpg" alt="Students orientation"/>
+              <img class="mobile_image" src="./resources/media/information-orientation-mobile.jpg" alt="Students orientation"/>
             </div>
             <div  class="text">
               <h3>Orientation date</h3>
@@ -86,7 +87,8 @@ divided into 2 sides side to side -->
           </div>
           <div class="side_container">
             <div id="right_image_box">
-              <img src="./resources/media/information-campus.jpg" alt="Campus"/>
+              <img  class="desktop_image" src="./resources/media/information-campus.jpg" alt="Campus"/>
+              <img  class="mobile_image" src="./resources/media/information-campus-mobile.jpg" alt="Campus"/>
             </div>
             <div  class="text">
               <h3>Our campus</h3>
@@ -96,7 +98,8 @@ divided into 2 sides side to side -->
           </div>
           <div class="side_container">
             <div id="right_image_box">
-              <img src="./resources/media/information-guest-lecture.jpg" alt="Guest photo"/>
+              <img class="desktop_image" src="./resources/media/information-guest-lecture.jpg" alt="Guest photo"/>
+              <img class="mobile_image" src="./resources/media/information-guest-lecture-mobile.jpg" alt="Guest photo"/>
             </div>
             <div  class="text">
               <h3>Our guest lecture</h3>
@@ -112,7 +115,15 @@ divided into 2 sides side to side -->
       <div class="container majors">
 
          <h2>Start Learning</h2>
-         <div class="all_options_container"
+         <div class="all_options_mobile">
+           <p>Software Engineering</p>
+           <p>Computer Art</p>
+           <p>Design</p>
+           <p>Data</p>
+           <p>Business</p>
+           <p>Marketing</p>
+         </div>
+         <div class="all_options_container hidden"
          <div class="all_options">
 
            <div class="options1">
@@ -199,7 +210,7 @@ divided into 2 sides side to side -->
           <div class="left_side">
             <video src="./resources/media/thesis.mp4" autoplay mute loop>Sorry, your browser doesn't support embedded videos
             </video>
-            <div  class="text">
+            <div  class="text hidden">
               <h3>Reimagine urban</h3>
               <p> Nam nec ante. Sed lacinia, urna non tincidunt
                mattis, tortor neque adipiscing diam,
@@ -210,7 +221,7 @@ divided into 2 sides side to side -->
             </div>
           </div>
 
-          <div class="right_side">
+          <div class="right_side hidden">
 
             <div class="side_container">
               <div id="right_image_box"><img src="./resources/media/thesis-fisma.jpg" alt="Fisma" />
@@ -241,7 +252,7 @@ divided into 2 sides with space between -->
           <p>&copy; 2017 Colmar Academy. All rights reserved.</p>
         </div>
 
-        <div>
+        <div id="hidden">
           <p>Terms</p>
           <p>Privacy</p>
         </div>
