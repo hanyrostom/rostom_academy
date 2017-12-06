@@ -93,7 +93,8 @@ h1{
 }
 @media only screen
 and (min-device-width : 414px)
-and (max-device-width : 736px) {
+and (max-device-width : 736px), @media only screen
+and (max-width : 480px) {
 
  #header_desktop{
   display: none;
@@ -144,7 +145,8 @@ and (max-device-width : 736px) {
 }
 @media only screen
 and (min-device-width : 414px)
-and (max-device-width : 736px) {
+and (max-device-width : 736px) , @media only screen
+and (max-width : 480px){
   .main {
     width: 100%;
   }
@@ -194,7 +196,8 @@ and (max-device-width : 736px) {
 }
 @media only screen
 and (min-device-width : 414px)
-and (max-device-width : 736px){
+and (max-device-width : 736px), @media only screen
+and (max-width : 480px){
   .intro {
     flex-direction: column;
     width: 100%;
@@ -313,7 +316,8 @@ display: none;
 }
 @media only screen
 and (min-device-width : 414px)
-and (max-device-width : 736px) {
+and (max-device-width : 736px), @media only screen
+and (max-width : 480px) {
   .hidden {
     display: none;
   }
@@ -473,7 +477,8 @@ background-color: hsla(202,0%,89%,1)
 
 @media only screen
 and (min-device-width : 414px)
-and (max-device-width : 736px) {
+and (max-device-width : 736px), @media only screen
+and (max-width : 480px) {
   .thesis {
     width: 100%;
   }
@@ -510,7 +515,8 @@ footer div:nth-child(2n+2) p {
 }
 @media only screen
 and (min-device-width : 414px)
-and (max-device-width : 736px) {
+and (max-device-width : 736px), @media only screen
+and (max-width : 480px) {
   footer {
     padding-bottom: 1.6rem;
   }
@@ -522,7 +528,8 @@ and (max-device-width : 736px) {
 kept messing all CSS but when place here it was fine, not sure why */
 @media only screen
 and (min-device-width : 414px)
-and (max-device-width : 736px) {
+and (max-device-width : 736px), @media only screen
+and (max-width : 480px) {
  .majors {
    background-color: transparent;
    border-top:0.5px solid hsla(202,0%,95%,1);
