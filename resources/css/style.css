@@ -146,7 +146,7 @@ and (max-device-width : 736px) {
 and (min-device-width : 414px)
 and (max-device-width : 736px) {
   .main {
-    width: 73.6rem;
+    width: 100%;
   }
 }
 /* Intro */
@@ -197,7 +197,7 @@ and (min-device-width : 414px)
 and (max-device-width : 736px){
   .intro {
     flex-direction: column;
-    width: 73.6rem;
+    width: 100%;
     position: relative;
     top:-2rem;
   }
@@ -475,7 +475,7 @@ background-color: hsla(202,0%,89%,1)
 and (min-device-width : 414px)
 and (max-device-width : 736px) {
   .thesis {
-    width: 73.6rem;
+    width: 100%;
   }
   .hidden {
       display: none;
@@ -526,7 +526,7 @@ and (max-device-width : 736px) {
  .majors {
    background-color: transparent;
    border-top:0.5px solid hsla(202,0%,95%,1);
-   width: 73.6rem;
+   width: 100%;
  }
 .all_options_mobile{
   display: flex;
