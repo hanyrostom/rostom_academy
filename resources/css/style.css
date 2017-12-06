@@ -1,3 +1,4 @@
+
 html {
   font-size: 62.5%;
   /* whats 62.5% of 100% (16px)=10px
@@ -90,7 +91,7 @@ h1{
   font-weight: bold;
   font-size: 1.8rem;
 }
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 360px) {
 
  #header_desktop{
   display: none;
@@ -199,6 +200,9 @@ h1{
   }
   .intro .start {
     margin: 3.2rem 1.6rem 3.2rem 1.6rem;
+  }
+  .start:nth-child(2) :nth-child(3) {
+    background: hsla(202,0%,60%,1);
   }
   .intro .start {
     max-width: 100%;
@@ -398,23 +402,6 @@ display: none;
   padding-top: .8rem;
   padding-bottom: .8rem;
 }
-@media only screen and (max-width : 360px) {
- .majors {
-   background-color: transparent;
-   border-top:0.5px solid hsla(202,0%,95%,1);
- }
-.all_options_mobile{
-  display: flex;
-  flex-direction: column;
-  background-color:
-}
-.all_options_mobile p {
-  background-color: hsla(202,0%,55%,1);
-  margin-bottom: .8rem;
-  padding: 1.6rem 10rem 2.4rem 1.6rem;
-  color:white;
-}
-}
 
 /*Thesis*/
 
@@ -472,6 +459,7 @@ background-color: hsla(202,0%,89%,1)
   font-size: 1.4rem;
   padding-top: .8rem;
 }
+
 @media only screen and (max-width : 360px) {
   .thesis {
     width: 36rem;
@@ -488,6 +476,8 @@ background-color: hsla(202,0%,89%,1)
     }
 
 }
+
+
 /*footer*/
 footer {
   position: relative;
@@ -513,3 +503,57 @@ footer div:nth-child(2n+2) p {
   display: none;
 }
 }
+/*media query for majors when placed above THesis and footer section
+kept messing all CSS but when place here it was fine, not sure why */
+@media only screen and (max-width : 360px) {
+ .majors {
+   background-color: transparent;
+   border-top:0.5px solid hsla(202,0%,95%,1);
+   width: 36rem;
+ }
+.all_options_mobile{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.all_options_mobile h3 {
+  color: hsla(202,0%,30%,1);
+  background-color: hsla(202,0%,89%,1);
+  margin:0rem 1.6rem .8rem 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.6rem;
+  max-width: 100%;
+  font-size: 1.9rem;
+  line-height: 1.6rem;
+}
+
+
+
+
+/*
+
+@media only screen and (max-width : 360px) {
+ .majors {
+   background-color: transparent;
+   border-top:0.5px solid hsla(202,0%,95%,1);
+   width: 36rem;
+ }
+.all_options_mobile{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.all_options_mobile h3 {
+  color: hsla(202,0%,30%,1);
+  background-color: hsla(202,0%,89%,1);
+  margin:0rem 1.6rem .8rem 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.6rem;
+  max-width: 100%;
+  font-size: 1.9rem;
+  line-height: 1.6rem;
+}
+
+*/
