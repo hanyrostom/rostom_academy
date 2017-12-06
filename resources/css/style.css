@@ -248,7 +248,17 @@ header p:hover {
 }
 #left_box {
   width:60%;
+  transition: all 100ms ease-in-out;
+
 }
+/* animation for features*/
+.features #left_box:hover {
+  box-shadow: 2px 2px 0.5px 1px rgba(0, 0, 0, 0.3);
+  background-color: hsla(202,59%,80%,1);
+  border: 1px solid hsla(202,5%,50%,1);
+  color: white;
+}
+
 #left_image_box {
   max-width: 100%;
   padding: 3.2rem 2.4rem;
@@ -278,7 +288,16 @@ header p:hover {
 }
 .right .side_container {
   display: flex;
+  transition: all 100ms ease-in-out;
 }
+/* animation for features*/
+.right .side_container:hover {
+  box-shadow: 2px 2px 0.5px 1px rgba(0, 0, 0, 0.3);
+  background-color: hsla(202,59%,80%,1);
+  border: 1px solid hsla(202,5%,50%,1);
+  color: white;
+}
+
 #right_image_box {
   width: 35%;
   padding: 1.6rem 1.6rem 0 1.6rem;
@@ -383,6 +402,7 @@ and (max-device-width : 736px) {
   width: 100%;
   height: auto;
 }
+
 .all_options_container .text {
   padding-top: 1.6rem;
   padding-left:1.6rem;
@@ -401,10 +421,16 @@ and (max-device-width : 736px) {
 .option {
   max-width: 30%;
   background-color: white;
+  transition: all 100ms ease-in-out;
+
 }
 /* animation for majors*/
 .option:hover {
-
+  max-width: 30.5%;
+  box-shadow: 2px 2px 0.5px 1px rgba(0, 0, 0, 0.3);
+  background-color: hsla(202,59%,80%,1);
+  border: 1px solid hsla(202,5%,50%,1);
+  color: white;
 }
 .middle {
   margin:0rem 3.2rem;
@@ -457,6 +483,16 @@ and (max-device-width : 736px) {
 .right_side .side_container{
   display: flex;
   padding-right: 1.6rem;
+  transition: all 100ms ease-in-out;
+
+}
+/* animation for Thesis*/
+.right_side .side_container:hover {
+  box-shadow: 2px 2px 0.5px 1px rgba(0, 0, 0, 0.3);
+  background-color: hsla(202,59%,80%,1);
+  border: 1px solid hsla(202,5%,50%,1);
+  color: white;
+}
 }
 .right_side .side_container:first-child {
 background-color: hsla(202,0%,89%,1)
