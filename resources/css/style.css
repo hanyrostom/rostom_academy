@@ -91,7 +91,7 @@ h1{
   font-weight: bold;
   font-size: 1.8rem;
 }
-@media only screen and (max-width : 667px) {
+@media only screen and (max-width : 736px) {
 
  #header_desktop{
   display: none;
@@ -140,9 +140,9 @@ h1{
   position: relative;
   top: 6.4rem;
 }
-@media only screen and (max-width : 667px) {
+@media only screen and (max-width : 736px) {
   .main {
-    width: 66.7rem;
+    width: 73.6rem;
   }
 }
 /* Intro */
@@ -188,10 +188,10 @@ h1{
  #mobile_banner {
   display:none;
 }
-@media only screen and (max-width : 667px) {
+@media only screen and (max-width : 736px) {
   .intro {
     flex-direction: column;
-    width: 66.7rem;
+    width: 73.6rem;
     position: relative;
     top:-2rem;
   }
@@ -305,7 +305,7 @@ background-color: hsla(202,0%,89%,1);
 .mobile_image {
 display: none;
 }
-@media only screen and (max-width : 667px) {
+@media only screen and (max-width : 736px) {
   .hidden {
     display: none;
   }
@@ -463,9 +463,9 @@ background-color: hsla(202,0%,89%,1)
   padding-top: .8rem;
 }
 
-@media only screen and (max-width : 667px) {
+@media only screen and (max-width : 736px) {
   .thesis {
-    width: 66.7rem;
+    width: 73.6rem;
   }
   .hidden {
       display: none;
@@ -498,7 +498,7 @@ footer div:nth-child(2n+2) {
 footer div:nth-child(2n+2) p {
   margin-left: 1rem;
 }
-@media only screen and (max-width : 667px) {
+@media only screen and (max-width : 736px) {
   footer {
     padding-bottom: 1.6rem;
   }
@@ -508,11 +508,11 @@ footer div:nth-child(2n+2) p {
 }
 /*media query for majors when placed above THesis and footer section
 kept messing all CSS but when place here it was fine, not sure why */
-@media only screen and (max-width : 667px) {
+@media only screen and (max-width : 736px) {
  .majors {
    background-color: transparent;
    border-top:0.5px solid hsla(202,0%,95%,1);
-   width: 66.7rem;
+   width: 73.6rem;
  }
 .all_options_mobile{
   display: flex;
